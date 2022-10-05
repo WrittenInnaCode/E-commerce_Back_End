@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     const tagData = await Tag.findAll({
       include: [{
         model: Product,
-        attributes: ["product_name", "price", "stock", "category_id"]
+        through: ProductTag,
       }]
     });
     if (tagData) {
@@ -31,7 +31,7 @@ router.get('/:id', async (req, res) => {
     const tagData = await Tag.findByPk(req.params.id, {
       include: [{
         model: Product,
-        attributes: ["product_name", "price", "stock", "category_id"]
+        through: ProductTag,
       }]
     });
     if (!tagData) {
@@ -84,7 +84,7 @@ router.delete('/:id', async (req, res) => {
       res.status(404).json({ message: 'No tag found with that id!' });
       return;
     }
-    res.status(200).json(tagData);
+    res.status(200).json("Deleted!");
   } catch (err) {
     res.status(500).json(err);
   }
