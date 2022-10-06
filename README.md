@@ -1,7 +1,7 @@
 # E-commerce Back End
 
 💻 [The repo can be found here.](https://github.com/WrittenInnaCode/E-commerce_Back_End) <br/><br/>
-📺 [The walkthrough video can be seen here.]( )
+📺 [The walkthrough video can be seen here.](https://drive.google.com/file/d/1NTfci7-Cof0lJRJ41d06fABBXzNGwxFC/view)
 
 <br/>
 
@@ -50,7 +50,11 @@ npm i or: <br/>
 
 ## Screenshots
 
-![alt screenshot]( )
+![alt screenshot](/assets/img/02%20Tags.gif)
+<br/><br/>
+![alt screenshot](/assets/img/03%20Categories.gif)
+<br/><br/>
+![alt screenshot](/assets/img/04%20Products.gif)
 <br/><br/>
 
 
